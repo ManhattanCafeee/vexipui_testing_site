@@ -1,0 +1,48 @@
+{
+  "name": "vexip_ui_test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint --cache \"**/*.{js,cjs,mjs,ts,tsx,json,vue}\"",
+    "lint:style": "stylelint --cache --fix \"**/*.{vue,css,scss}\"",
+    "prettier": "prettier --write \"**/*.{js,cjs,mjs,ts,json,css,scss,vue,html,md}\"",
+    "precommit": "lint-staged -c ./.husky/.lintstagedrc -q",
+    "prepare": "is-ci || husky install"
+  },
+  "dependencies": {
+    "@vexip-ui/bem-helper": "^1.1.0",
+    "@vexip-ui/icons": "^1.2.1",
+    "vexip-ui": "^2.3.39",
+    "vue": "^3.5.26",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.2.0",
+    "@eslint/js": "^9.39.2",
+    "@vexip-ui/commitlint-config": "^0.5.0",
+    "@vexip-ui/eslint-config": "^1.3.0",
+    "@vexip-ui/plugins": "^1.7.0",
+    "@vexip-ui/prettier-config": "^1.1.0",
+    "@vexip-ui/stylelint-config": "^1.1.0",
+    "@vitejs/plugin-vue": "^6.0.3",
+    "@vitejs/plugin-vue-jsx": "^5.1.3",
+    "@vue/runtime-core": "^3.5.26",
+    "eslint": "^9.39.2",
+    "husky": "^9.1.7",
+    "is-ci": "^4.1.0",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4",
+    "sass": "^1.97.1",
+    "stylelint": "^16.26.1",
+    "stylelint-prettier": "^5.0.3",
+    "typescript": "~5.9.3",
+    "unplugin-auto-import": "^20.3.0",
+    "unplugin-vue-components": "^30.0.0",
+    "vite": "^7.3.0",
+    "vue-tsc": "^3.2.1"
+  }
+}
